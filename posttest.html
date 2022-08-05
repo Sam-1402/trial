@@ -44,8 +44,12 @@
     <link rel="stylesheet" href="./assets/css/vlabs-style.css">
       
       
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({ TeX: { extensions: ["autobold.js"] }});</script>
-    <script type="text/javascript" src="https://example.com/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+	      TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
     <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
@@ -347,7 +351,7 @@
                 
                 
                   <div class="question beginner">
-                    What will be the zeroes,poles and gain of : $${ rac{5s + 4}{3s^2 + 1s - 2} }$$
+                    What will be the zeroes,poles and gain of : $${ frac{5s + 4}{3s^2 + 1s - 2} }$$
                   </div>
                   
                   <div class="answers">
@@ -393,7 +397,7 @@
                     <div id="answer1a">
                       <label>
                         <input type="radio" name="question1" value="a">
-                        a: a.) $${ rac{5s^2 - 10s + 25}{1s^2 - 5s + 6} }$$
+                        a: a.) $${ frac{5s^2 - 10s + 25}{1s^2 - 5s + 6} }$$
                       </label>
                       <a href="#" id="explanation1a" class="accordion" onclick="return false;">Explanation</a>
                     </div>
@@ -401,7 +405,7 @@
                     <div id="answer1b">
                       <label>
                         <input type="radio" name="question1" value="b">
-                        b: b.)  $${ rac{1s^2 - 5s + 6}{5s^2 - 10s + 25}}$$
+                        b: b.)  $${ frac{1s^2 - 5s + 6}{5s^2 - 10s + 25}}$$
                       </label>
                       <a href="#" id="explanation1b" class="accordion" onclick="return false;">Explanation</a>
                     </div>
@@ -409,7 +413,7 @@
                     <div id="answer1c">
                       <label>
                         <input type="radio" name="question1" value="c">
-                        c: c.) $${ rac{1s^2 + 5s + 6}{5s^2 - 10s + 25}}$$
+                        c: c.) $${ frac{1s^2 + 5s + 6}{5s^2 - 10s + 25}}$$
                       </label>
                       <a href="#" id="explanation1c" class="accordion" onclick="return false;">Explanation</a>
                     </div>
@@ -417,7 +421,7 @@
                     <div id="answer1d">
                       <label>
                         <input type="radio" name="question1" value="d">
-                        d: d.) $${ rac{5s^2 + 10s + 25}{1s^2 + 5s + 6}}$$
+                        d: d.) $${ frac{5s^2 + 10s + 25}{1s^2 + 5s + 6}}$$
                       </label>
                       <a href="#" id="explanation1d" class="accordion" onclick="return false;">Explanation</a>
                     </div>
